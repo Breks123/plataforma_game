@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://btlvbvou41hl6"]
+
+[ext_resource type="Script" path="res://Scripts/Sprite2D.gd" id="1_wjn7y"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_eua3o"]
+blend_mode = 1
+light_mode = 2
+
+[sub_resource type="Gradient" id="Gradient_sbis4"]
+offsets = PackedFloat32Array(0, 0.688312)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uw6im"]
+gradient = SubResource("Gradient_sbis4")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_x87yf"]
+offsets = PackedFloat32Array(0, 0.694805)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sqafu"]
+gradient = SubResource("Gradient_x87yf")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
+[node name="Tocha" type="ColorRect"]
+offset_left = 531.0
+offset_top = 231.0
+offset_right = 541.0
+offset_bottom = 272.0
+color = Color(0.317647, 0.227451, 0.0313726, 1)
+
+[node name="tocha" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_eua3o")
+position = Vector2(5.5, -14.5)
+scale = Vector2(0.953125, 0.953125)
+texture = SubResource("GradientTexture2D_uw6im")
+script = ExtResource("1_wjn7y")
+
+[node name="PointLight2D" type="PointLight2D" parent="tocha"]
+position = Vector2(2.62296, -1.57376)
+scale = Vector2(7.36065, 5.96721)
+color = Color(0.803922, 0.290196, 0, 1)
+energy = 11.81
+texture = SubResource("GradientTexture2D_sqafu")
