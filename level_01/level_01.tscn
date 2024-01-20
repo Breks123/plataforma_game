@@ -422,7 +422,7 @@ offset_bottom = 21.0
 color = Color(0.211765, 0.211765, 0.211765, 1)
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(93, 193)
+position = Vector2(76, 283)
 script = ExtResource("1_4tdon")
 
 [node name="anim" type="AnimationPlayer" parent="Player"]
