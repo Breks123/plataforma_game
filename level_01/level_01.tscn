@@ -336,6 +336,7 @@ offset_bottom = 596.0
 color = Color(0.0313726, 0.0313726, 0.0313726, 1)
 
 [node name="Tocha" type="ColorRect" parent="."]
+visible = false
 offset_left = 422.0
 offset_top = 232.0
 offset_right = 432.0
@@ -356,6 +357,7 @@ energy = 11.81
 texture = SubResource("GradientTexture2D_sqafu")
 
 [node name="Tocha2" type="ColorRect" parent="."]
+visible = false
 offset_left = 1123.0
 offset_top = 217.0
 offset_right = 1133.0
@@ -422,7 +424,7 @@ offset_bottom = 21.0
 color = Color(0.211765, 0.211765, 0.211765, 1)
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(76, 283)
+position = Vector2(58, 283)
 script = ExtResource("1_4tdon")
 
 [node name="anim" type="AnimationPlayer" parent="Player"]
@@ -459,10 +461,12 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0.686275, 0.686275, 0.686275, 1)
 
 [node name="esmeralda" type="Area2D" parent="."]
-position = Vector2(-13, -6)
+visible = false
+position = Vector2(451, 27)
 script = ExtResource("2_kjjrx")
 
 [node name="Esmeralda" parent="esmeralda" instance=ExtResource("2_xxwwo")]
